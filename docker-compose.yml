@@ -2,7 +2,7 @@ services:
   g_hsl_cs:
     image: gbezirci/hslcomingsoon
     ports:
-      - 80:80
+      - 2082:80
     deploy:
       replicas: 1
       restart_policy:
