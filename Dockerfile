@@ -2,6 +2,7 @@
 FROM nginx:alpine
 
 # index.html dosyasını ve assets klasörünü nginx HTML klasörüne kopyalayın
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html/index.html
 COPY assets/ /usr/share/nginx/html/assets/
 

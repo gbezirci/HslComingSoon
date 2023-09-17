@@ -1,0 +1,12 @@
+services:
+  g_hsl_cs:
+    image: gbezirci/hslcomingsoon
+    ports:
+      - 1080:80
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.role == worker
